@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:CookieClicker"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid Background="#FFFFF6D0">
-        <Button x:Name="button1" Content="Click!" HorizontalAlignment="Left" Height="44" Margin="181,24,0,0" VerticalAlignment="Top" Width="137" FontFamily="Segoe UI Semibold" FontSize="20" Background="#FFFBBEBE" Foreground="#FF510E0E" Click="button1_Click"/>
+    <Grid x:Name="grid" Background="#FFFFF6D0">
+        <Button x:Name="button1" Content="Click!" HorizontalAlignment="Left" Height="44" Margin="181,24,0,0" VerticalAlignment="Top" Width="137" FontFamily="Segoe UI Semibold" FontSize="20" Background="#FFFBC2C2" Foreground="#FF510E0E" Click="button1_Click"/>
         <Label x:Name="label1" Content="0" HorizontalAlignment="Left" Height="68" Margin="173,131,0,0" VerticalAlignment="Top" Width="145" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFF5BE87" Foreground="#FF851D1D" FontFamily="Yu Gothic UI Semibold" FontSize="24"/>
         <Label x:Name="label2" Content="x1" HorizontalAlignment="Left" Height="64" Margin="111,215,0,0" VerticalAlignment="Top" Width="272" Background="#FFF7EF98" Foreground="#FF5F0E0E" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="36"/>
-        <Label x:Name="label3" HorizontalAlignment="Left" Height="131" Margin="10,40,0,0" VerticalAlignment="Top" Width="149" Foreground="#FF5B0909" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="18"/>
+        <Label x:Name="label3" HorizontalAlignment="Left" Height="131" Margin="0,40,0,0" VerticalAlignment="Top" Width="173" Foreground="#FF5B0909" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe UI Semibold" FontSize="18"/>
 
     </Grid>
 </Window>

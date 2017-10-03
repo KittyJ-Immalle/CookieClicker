@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace CookieClicker
 {
@@ -29,31 +30,57 @@ namespace CookieClicker
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            if(c < 50)
+            Clicker();
+        }
+
+        private void AutoClick()
+        {
+            
+        }
+
+        private void Clicker()
+        {
+            if (c < 50)
             {
                 c = c + 1;
-            } else if(c < 100)
+                AutoClick();
+            }
+            else if (c < 100)
             {
                 c = c + 2;
                 label2.Content = "x2";
-            } else if(c < 500) {
-                c = c + 3;
+            }
+            else if (c < 500)
+            {
+                c = c + 5;
                 label2.Content = "x3";
                 label3.Content = "Keep going!";
-            } else if(c < 1000)
+            }
+            else if (c < 1000)
             {
-                c = c + 4;
+                c = c + 10;
                 label2.Content = "x4";
-            } else if(c < 2000) {
-                c = c + 5;
-                label2.Content = "x5";
-            } else if(c < 4000)
+            }
+            else if (c < 3000)
             {
-                c = c + 6;
-                label2.Content = "x6";
+                c = c + 20;
+                label2.Content = "x5";
+                label3.Content = "You're doing great!";
+            }
+            else if (c < 7000)
+            {
+                c = c + 50;
+                label2.Content = "x10";
+                label3.Content = "AAAAAAAAAAAA";
+                grid.Background = Brushes.Black;
+                button1.Background = Brushes.Red;
+                label1.Background = Brushes.Red;
+                label2.Background = Brushes.Red;
+
             }
 
             label1.Content = c;
         }
+
     }
 }
